@@ -1,0 +1,33 @@
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: ((100%-10%) / 4);
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    flex-basis: ((100%-10%) / 5);
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.hidden {
+    display: none;
+}
