@@ -40,8 +40,8 @@ function onFormSubmit(e) {
 function renderImage (searchedImage) {
   const markup = searchedImage
   .map(({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) => {
-      return `<a href="${largeImageURL}" alt="${tags}"><div class="photo-card">
-      <img src="${webformatURL}" alt="${tags} width = "100" height = "200" loading="lazy" />
+      return `<div class="photo-card"><a href="${largeImageURL}" alt="${tags}"></a>
+      <img src="${webformatURL}" alt="${tags} width = "20" height = "180" loading="lazy" />
       <div class="info">
         <p class="info-item">
           <b>Likes ${likes}</b>
@@ -56,11 +56,11 @@ function renderImage (searchedImage) {
           <b>Downloads ${downloads}</b>
         </p>
       </div>
-    </div></a>`;
+    </div>`;
   }).join('');    
 
   gall.innerHTML = markup;
-  input.innerHTML = '';
+  // input.innerHTML = '';
 
   button.classList.remove("hidden");
 
