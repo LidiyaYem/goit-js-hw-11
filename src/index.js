@@ -44,26 +44,23 @@ function renderImage (searchedImage) {
       <img src="${webformatURL}" alt="${tags} width = "20" height = "180" loading="lazy" />
       <div class="info">
         <p class="info-item">
-          <b>Likes ${likes}</b>
+          <b>Likes</b> ${likes}
         </p>
         <p class="info-item">
-          <b>Views ${views}</b>
+          <b>Views</b> ${views}
         </p>
         <p class="info-item">
-          <b>Comments ${comments}</b>
+          <b>Comments</b> ${comments}
         </p>
         <p class="info-item">
-          <b>Downloads ${downloads}</b>
+          <b>Downloads</b> ${downloads}
         </p>
       </div>
     </div>`;
   }).join('');    
 
   gall.innerHTML = markup;
-  // input.innerHTML = '';
-
   button.classList.remove("hidden");
-
 }
 
 input.addEventListener('click', onButtonClick);
